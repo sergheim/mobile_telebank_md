@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>
+			Mobile banking
+        </title>
+		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.3.min.js">
+		</script>
+		<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js">
+		</script>
+        <link rel="stylesheet" href="css/mtbmd.css" />
+        <script src="js/mtbmd.js">
+        </script>
+        <!-- User-generated css -->
+        <style>
+        </style>
+        <!-- User-generated js -->
+        <script>
+            try {
+					$(function() {
+	
+					});
+				} catch (error) {
+					console.error("Your javascript has an error: " + error);
+			}
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="home">
+            <div data-theme="e" data-role="header" data-position="fixed">
+                <img src="images/v1/logo.png" alt="image" />
+                <h3>
+                    Mobile banking
+                </h3>
+            </div>
+            <div data-role="content">
+                <a data-role="button" data-rel="back" data-transition="slidefade" data-theme="b" href="#logon">
+                    Intrare in sistem
+                </a>
+                <a data-role="button" data-rel="back" data-transition="slidefade" data-theme="b" href="#services">
+                    Servicii
+                </a>
+                <a data-role="button" data-rel="back" data-transition="slidefade" data-theme="b" href="#help">
+                    Ajutor
+                </a>
+            </div>
+            <div data-theme="e" data-role="footer" data-position="fixed">
+                <h2>
+                    (C) 2013
+                </h2>
+            </div>			
+        </div>
+		<!-- LogOn -->
+        <div data-role="page" id="logon">
+            <div data-theme="e" data-role="header" data-position="fixed">
+                <h3>
+                    Mobile banking
+                </h3>
+            </div>
+            <div data-role="content">
+                <div id="username" data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="username">
+                            User name:
+                        </label>
+                        <input name="username" id="username" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div id="password" data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input name="password" id="password" placeholder="" value="" type="password" />
+                    </fieldset>
+                </div>
+                <input id="login" data-theme="b" value="Log In" data-mini="true" type="submit" />
+            </div>
+            <div data-theme="e" data-role="footer" data-position="fixed">
+                <h2>
+                    (C) 2013
+                </h2>
+            </div>
+        </div>
+		<!-- Menu -->
+        <div data-role="page" id="menu">
+            <div data-theme="e" data-role="header" data-position="fixed">
+                <h3>
+                    Mobile banking
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="collapsible-set" data-theme="b" data-content-theme="d">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Accounts
+                        </h3>
+						<ul data-role="listview" data-divider-theme="b" data-inset="true">
+                            <li data-theme="c">
+                                <a href="#accounts" data-transition="slide">
+                                    List accounts
+                                </a>
+                            </li>
+                            <li data-theme="c">
+                                <a href="#statements" data-transition="slide">
+                                    Statements
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Cards
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Deposits
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Loans
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Utility
+                        </h3>
+                        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                            <li data-theme="c">
+                                <a href="#invoices" data-transition="slide">
+                                    Invoices
+                                </a>
+                            </li>
+                            <li data-theme="c">
+                                <a href="#utemplates" data-transition="slide">
+                                    Templates
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div data-theme="e" data-role="footer" data-position="fixed">
+                <h2>
+                    (C) 2013
+                </h2>
+            </div>
+        </div>
+		<!-- Accounts -->
+        <div data-role="page" id="accounts">
+            <div data-theme="e" data-role="header" data-position="fixed">
+                <h3>
+                    Mobile banking
+                </h3>
+            </div>
+            <div data-role="content">
+                <h2>
+                    Accounts
+                </h2>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                </div>
+            </div>
+            <div data-theme="e" data-role="footer" data-position="fixed">
+                <h2>
+                    (C) 2013
+                </h2>
+            </div>
+        </div>
+		<!-- Statements -->
+        <div data-role="page" id="statements">
+            <div data-theme="e" data-role="header" data-position="fixed">
+                <h3>
+                    Mobile banking
+                </h3>
+            </div>
+            <div data-role="content">
+                <h2>
+                    Statements
+                </h2>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                </div>
+            </div>
+            <div data-theme="e" data-role="footer" data-position="fixed">
+                <h2>
+                    (C) 2013
+                </h2>
+            </div>
+        </div>
+		<!-- Invoices -->
+        <div data-role="page" id="invoices">
+            <div data-theme="e" data-role="header" data-position="fixed">
+                <h3>
+                    Mobile banking
+                </h3>
+            </div>
+            <div data-role="content">
+                <h2>
+                    Utility invoices
+                </h2>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                </div>
+            </div>
+            <div data-theme="e" data-role="footer" data-position="fixed">
+                <h2>
+                    (C) 2013
+                </h2>
+            </div>
+        </div>
+		<!-- Utility templates -->
+        <div data-role="page" id="utemplates">
+            <div data-theme="e" data-role="header" data-position="fixed">
+                <h3>
+                    Mobile banking
+                </h3>
+            </div>
+            <div data-role="content">
+                <h2>
+                    Utility templates
+                </h2>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                </div>
+            </div>
+            <div data-theme="e" data-role="footer" data-position="fixed">
+                <h2>
+                    (C) 2013
+                </h2>
+            </div>
+        </div>
+		<!-- Services -->
+        <div data-role="page" id="services">
+            <div data-theme="e" data-role="header" data-position="fixed">
+                <h3>
+                    Mobile banking
+                </h3>
+            </div>
+            <div data-role="content">
+                <h2>
+                    Services
+                </h2>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                </div>
+            </div>
+            <div data-theme="e" data-role="footer" data-position="fixed">
+                <h2>
+                    (C) 2013
+                </h2>
+            </div>
+        </div>
+		<!-- Help -->
+        <div data-role="page" id="help">
+            <div data-theme="e" data-role="header" data-position="fixed">
+                <h3>
+                    Mobile banking
+                </h3>
+            </div>
+            <div data-role="content">
+                <h2>
+                    Help
+                </h2>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                </div>
+            </div>
+            <div data-theme="e" data-role="footer" data-position="fixed">
+                <h2>
+                    (C) 2013
+                </h2>
+            </div>
+        </div>
+    </body>
+</html>
